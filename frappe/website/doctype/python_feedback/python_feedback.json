@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "format:{MM}-{YY}-{####}",
+ "creation": "2021-05-12 22:08:17.189658",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "email",
+  "phone_no",
+  "do_you_like_python",
+  "do_you_like_paid_course",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No."
+  },
+  {
+   "fieldname": "do_you_like_python",
+   "fieldtype": "Select",
+   "label": "Do you like Python?",
+   "options": "yes\nno"
+  },
+  {
+   "fieldname": "do_you_like_paid_course",
+   "fieldtype": "Select",
+   "label": "Do you like paid course?",
+   "options": "yes\nno"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Data",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2021-05-12 22:10:58.371094",
+ "modified_by": "Administrator",
+ "module": "Website",
+ "name": "Python Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Python",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
