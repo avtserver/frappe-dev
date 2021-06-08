@@ -2,7 +2,7 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_import": 1,
- "creation": "2013-03-28 10:35:30",
+ "creation": "2021-06-03 22:44:18.504742",
  "doctype": "DocType",
  "document_type": "Setup",
  "engine": "InnoDB",
@@ -43,21 +43,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "published_on",
-   "fieldtype": "Date",
-   "label": "Published On"
-  },
-  {
-   "default": "0",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "label": "Published"
-  },
-  {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "blog_category",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -80,6 +65,49 @@
    "fieldtype": "Data",
    "label": "Route",
    "unique": 1
+  },
+  {
+   "description": "in minutes",
+   "fieldname": "read_time",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Read Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "published_on",
+   "fieldtype": "Date",
+   "label": "Published On"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "default": "0",
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "label": "Featured"
+  },
+  {
+   "default": "0",
+   "fieldname": "hide_cta",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Hide CTA"
+  },
+  {
+   "default": "0",
+   "description": "Comments on this blog post will be disabled if checked.",
+   "fieldname": "disable_comments",
+   "fieldtype": "Check",
+   "label": "Disable Comments"
   },
   {
    "fieldname": "section_break_5",
@@ -128,11 +156,15 @@
    "label": "Email Sent"
   },
   {
-   "default": "0",
-   "description": "Comments on this blog post will be disabled if checked.",
-   "fieldname": "disable_comments",
-   "fieldtype": "Check",
-   "label": "Disable Comments"
+   "fieldname": "meta_tags",
+   "fieldtype": "Section Break",
+   "label": "Meta Tags"
+  },
+  {
+   "fieldname": "meta_title",
+   "fieldtype": "Data",
+   "label": "Meta Title",
+   "length": 60
   },
   {
    "fieldname": "meta_description",
@@ -159,51 +191,18 @@
    "fieldtype": "HTML",
    "label": "Google Snippet Preview",
    "read_only": 1
-  },
-  {
-   "fieldname": "meta_tags",
-   "fieldtype": "Section Break",
-   "label": "Meta Tags"
-  },
-  {
-   "description": "in minutes",
-   "fieldname": "read_time",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Read Time",
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "featured",
-   "fieldtype": "Check",
-   "label": "Featured"
-  },
-  {
-   "default": "0",
-   "fieldname": "hide_cta",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Hide CTA"
-  },
-  {
-   "fieldname": "meta_title",
-   "fieldtype": "Data",
-   "label": "Meta Title",
-   "length": 60
   }
  ],
  "has_web_view": 1,
  "icon": "fa fa-quote-left",
- "idx": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
  "max_attachments": 5,
- "modified": "2021-06-03 22:41:59.867098",
+ "modified": "2021-06-03 22:44:36.833448",
  "modified_by": "Administrator",
  "module": "Website",
- "name": "Blog Post",
+ "name": "News",
  "owner": "Administrator",
  "permissions": [
   {
@@ -229,7 +228,7 @@
    "write": 1
   }
  ],
- "route": "blog",
+ "route": "News",
  "sort_field": "modified",
  "sort_order": "ASC",
  "title_field": "title",
